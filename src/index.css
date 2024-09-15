@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .after-line {
+      position: relative;
+    }
+    .after-line::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      height: 1px;
+      width: 0;
+      background-color: #fff;
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+    .after-line:hover::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+  .footer{
+    background-image: url("https://cdn.pixabay.com/photo/2014/09/17/20/26/restaurant-449952_960_720.jpg");
+  }
+  .radial-shadow {
+    
+    box-shadow: inset -61px -60px 72px rgb(15, 15, 15);
+    backdrop-filter: blur(2px);
+  }
+  
