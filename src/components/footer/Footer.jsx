@@ -46,6 +46,7 @@ const Footer = () => {
                             <li key={i} className='  font-bold mx-2 text-lg text-white after-line'>
                                     {item}
                             </li>
+                            
                         ))}
                     </ul>
                     </div>
